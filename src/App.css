@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Kanit&family=Lobster&family=Lora:wght@400;500;600;700&family=Montserrat:wght@300&family=Nunito+Sans:wght@400;700&family=PT+Sans&display=swap');
+*{
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game_box{
+  height: 8rem;
+  width: 8rem;
+  
+  border: 1px solid white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+}
+.Board{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: min-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center ;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(to right, #c31432, #240b36);
+  height: 100vh;
+  width: 100vw;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  background-color: aqua;
+  border: none;
+  border-radius: 2px;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  font-weight: 600;
+  font-size: medium;
 }
